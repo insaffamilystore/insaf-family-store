@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="bn">
 <head>
@@ -7,28 +6,89 @@
 <title>Insaf Family Store</title>
 <style>
 *{box-sizing:border-box}
-body{margin:0;font-family:Arial,sans-serif;background:#f5f7f4;color:#222}
-header{background:#146b43;color:white;text-align:center;padding:25px 12px}
-header h1{margin:0;font-size:27px}
-header p{margin:8px 0 0}
-nav{background:#fff;padding:13px;text-align:center}
-nav a{color:#146b43;text-decoration:none;margin:0 8px;font-weight:bold}
-.hero{background:#e4f2e8;text-align:center;padding:35px 15px}
-.hero h2{color:#146b43;font-size:25px}
-.hero p{line-height:1.8}
-.section{padding:22px 14px}
-.section h2{text-align:center;color:#146b43}
-.products{display:grid;grid-template-columns:repeat(2,1fr);gap:13px}
-.product{background:white;border-radius:12px;padding:18px 10px;text-align:center;box-shadow:0 2px 8px #ddd}
-.product .emoji{font-size:48px}
-.product h3{font-size:17px}
-.product p{font-size:14px;color:#555}
-.btn{display:inline-block;background:#146b43;color:white;padding:10px 16px;border-radius:7px;text-decoration:none}
-.contact{text-align:center;background:#e4f2e8;padding:25px 12px}
-footer{background:#174c34;color:white;text-align:center;padding:18px;font-size:14px}
+body{
+margin:0;
+font-family:Arial,sans-serif;
+background:#f5f8f5;
+color:#222;
+}
+header{
+background:#126b43;
+color:white;
+text-align:center;
+padding:28px 12px;
+}
+header h1{font-size:27px;margin:0}
+header p{margin:10px 0 0}
+nav{
+background:white;
+padding:15px 5px;
+text-align:center;
+position:sticky;
+top:0;
+}
+nav a{
+color:#126b43;
+text-decoration:none;
+margin:0 9px;
+font-weight:bold;
+}
+.hero{
+background:#e3f2e8;
+text-align:center;
+padding:45px 18px;
+}
+.hero h2{color:#126b43;font-size:25px}
+.hero p{line-height:1.9}
+.btn{
+display:inline-block;
+background:#126b43;
+color:white;
+padding:12px 22px;
+border-radius:7px;
+text-decoration:none;
+margin-top:10px;
+}
+.section{padding:25px 15px}
+.section h2{
+text-align:center;
+color:#126b43;
+margin-bottom:22px;
+}
+.products{
+display:grid;
+grid-template-columns:repeat(2,1fr);
+gap:14px;
+}
+.product{
+background:white;
+padding:20px 10px;
+border-radius:12px;
+text-align:center;
+box-shadow:0 2px 9px #ddd;
+}
+.emoji{font-size:42px}
+.product h3{font-size:16px}
+.product p{font-size:14px;color:#555;line-height:1.6}
+.contact{
+background:#e3f2e8;
+text-align:center;
+padding:30px 15px;
+}
+footer{
+background:#174c34;
+color:white;
+text-align:center;
+padding:18px;
+font-size:14px;
+}
+@media(max-width:350px){
+.products{grid-template-columns:1fr}
+}
 </style>
 </head>
 <body>
+
 <header>
 <h1>INSAAF FAMILY STORE</h1>
 <p>বিশ্বাস • মান • সেবা</p>
@@ -36,13 +96,16 @@ footer{background:#174c34;color:white;text-align:center;padding:18px;font-size:1
 
 <nav>
 <a href="#home">হোম</a>
-<a href="#products">পণ্য</a>
+<a href="#products">পণ্যসমূহ</a>
 <a href="#contact">যোগাযোগ</a>
 </nav>
 
 <section class="hero" id="home">
 <h2>আপনার পরিবারের বিশ্বস্ত অনলাইন শপ</h2>
-<p>ইসলামিক পণ্য, পোশাক, কসমেটিকস ও দৈনন্দিন প্রয়োজনীয় সামগ্রী—সব এক ঠিকানায়।</p>
+<p>
+সাশ্রয়ী মূল্যে পরিবারের নিত্যপ্রয়োজনীয়
+পণ্য কেনাকাটার বিশ্বস্ত ঠিকানা।
+</p>
 <a class="btn" href="#products">পণ্য দেখুন</a>
 </section>
 
@@ -54,42 +117,48 @@ footer{background:#174c34;color:white;text-align:center;padding:18px;font-size:1
 <div class="emoji">📚</div>
 <h3>ইসলামিক পণ্য</h3>
 <p>ইসলামিক বই, টুপি ও তসবিহ</p>
-<a class="btn" href="#contact">দাম জানতে</a>
 </div>
 
 <div class="product">
 <div class="emoji">🧥</div>
 <h3>পোশাক সামগ্রী</h3>
 <p>বড়দের ও শিশুদের পোশাক</p>
-<a class="btn" href="#contact">দাম জানতে</a>
 </div>
 
 <div class="product">
 <div class="emoji">🛏️</div>
 <h3>কম্ফর্টার সেট</h3>
 <p>শীতের আরামদায়ক বিছানার সামগ্রী</p>
-<a class="btn" href="#contact">দাম জানতে</a>
 </div>
 
 <div class="product">
 <div class="emoji">💡</div>
 <h3>রিচার্জেবল লাইট</h3>
 <p>জরুরি সময়ের আলোর ব্যবস্থা</p>
-<a class="btn" href="#contact">দাম জানতে</a>
 </div>
 
 <div class="product">
 <div class="emoji">🌸</div>
 <h3>কসমেটিকস ও পারফিউম</h3>
 <p>নিত্যদিনের ব্যবহার্য সামগ্রী</p>
-<a class="btn" href="#contact">দাম জানতে</a>
 </div>
 
 <div class="product">
 <div class="emoji">🏠</div>
 <h3>গৃহস্থালী সামগ্রী</h3>
 <p>ঘর ও রান্নাঘরের প্রয়োজনীয় পণ্য</p>
-<a class="btn" href="#contact">দাম জানতে</a>
+</div>
+
+<div class="product">
+<div class="emoji">🎁</div>
+<h3>স্টেশনারি ও গিফট</h3>
+<p>শিক্ষা ও উপহারের সামগ্রী</p>
+</div>
+
+<div class="product">
+<div class="emoji">🔌</div>
+<h3>ইলেকট্রিক্যাল পণ্য</h3>
+<p>দৈনন্দিন ব্যবহারের সামগ্রী</p>
 </div>
 
 </div>
@@ -103,7 +172,8 @@ footer{background:#174c34;color:white;text-align:center;padding:18px;font-size:1
 
 <footer>
 <p>বিশ্বাস • মান • সেবা</p>
-<p>© 2026 Insaf Family Store. সর্বস্বত্ব সংরক্ষিত।</p>
+<p>© 2026 Insaf Family Store</p>
 </footer>
+
 </body>
 </html>
