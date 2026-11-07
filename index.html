@@ -9,34 +9,33 @@
 body{
 margin:0;
 font-family:Arial,sans-serif;
-background:#f5f8f5;
+background:#f7faf7;
 color:#222;
 }
 header{
 background:#126b43;
 color:white;
 text-align:center;
-padding:28px 12px;
+padding:25px 10px;
 }
-header h1{font-size:27px;margin:0}
-header p{margin:10px 0 0}
+header h1{margin:0;font-size:27px}
+header p{margin:8px 0 0}
 nav{
 background:white;
-padding:15px 5px;
+padding:14px;
 text-align:center;
-position:sticky;
-top:0;
+box-shadow:0 2px 5px #ddd;
 }
 nav a{
 color:#126b43;
 text-decoration:none;
-margin:0 9px;
+margin:8px;
 font-weight:bold;
 }
 .hero{
 background:#e3f2e8;
+padding:40px 15px;
 text-align:center;
-padding:45px 18px;
 }
 .hero h2{color:#126b43;font-size:25px}
 .hero p{line-height:1.9}
@@ -45,15 +44,15 @@ display:inline-block;
 background:#126b43;
 color:white;
 padding:12px 22px;
-border-radius:7px;
+border-radius:8px;
 text-decoration:none;
-margin-top:10px;
+margin:10px 4px;
 }
-.section{padding:25px 15px}
+.section{padding:30px 14px}
 .section h2{
 text-align:center;
 color:#126b43;
-margin-bottom:22px;
+margin-bottom:25px;
 }
 .products{
 display:grid;
@@ -62,28 +61,24 @@ gap:14px;
 }
 .product{
 background:white;
-padding:20px 10px;
+padding:18px 10px;
 border-radius:12px;
 text-align:center;
-box-shadow:0 2px 9px #ddd;
+box-shadow:0 2px 8px #ddd;
 }
-.emoji{font-size:42px}
+.product .emoji{font-size:42px}
 .product h3{font-size:16px}
-.product p{font-size:14px;color:#555;line-height:1.6}
+.product p{font-size:14px;line-height:1.6;color:#555}
 .contact{
 background:#e3f2e8;
-text-align:center;
 padding:30px 15px;
+text-align:center;
 }
 footer{
 background:#174c34;
 color:white;
 text-align:center;
-padding:18px;
-font-size:14px;
-}
-@media(max-width:350px){
-.products{grid-template-columns:1fr}
+padding:20px;
 }
 </style>
 </head>
@@ -102,10 +97,7 @@ font-size:14px;
 
 <section class="hero" id="home">
 <h2>আপনার পরিবারের বিশ্বস্ত অনলাইন শপ</h2>
-<p>
-সাশ্রয়ী মূল্যে পরিবারের নিত্যপ্রয়োজনীয়
-পণ্য কেনাকাটার বিশ্বস্ত ঠিকানা।
-</p>
+<p>সাশ্রয়ী মূল্যে পরিবারের নিত্যপ্রয়োজনীয় পণ্য কেনাকাটার ঠিকানা।</p>
 <a class="btn" href="#products">পণ্য দেখুন</a>
 </section>
 
@@ -128,7 +120,7 @@ font-size:14px;
 <div class="product">
 <div class="emoji">🛏️</div>
 <h3>কম্ফর্টার সেট</h3>
-<p>শীতের আরামদায়ক বিছানার সামগ্রী</p>
+<p>৫ পিসের বিছানার সেট</p>
 </div>
 
 <div class="product">
@@ -140,13 +132,13 @@ font-size:14px;
 <div class="product">
 <div class="emoji">🌸</div>
 <h3>কসমেটিকস ও পারফিউম</h3>
-<p>নিত্যদিনের ব্যবহার্য সামগ্রী</p>
+<p>প্রয়োজনীয় সৌন্দর্য সামগ্রী</p>
 </div>
 
 <div class="product">
-<div class="emoji">🏠</div>
-<h3>গৃহস্থালী সামগ্রী</h3>
-<p>ঘর ও রান্নাঘরের প্রয়োজনীয় পণ্য</p>
+<div class="emoji">🍽️</div>
+<h3>প্লাস্টিক ও কিচেন আইটেম</h3>
+<p>রান্নাঘরের প্রয়োজনীয় পণ্য</p>
 </div>
 
 <div class="product">
@@ -165,9 +157,9 @@ font-size:14px;
 </section>
 
 <section class="contact" id="contact">
-<h2>আমাদের সাথে যোগাযোগ করুন</h2>
-<p>পণ্য সম্পর্কে জানতে বা অর্ডার করতে আমাদের ফেসবুক পেজে মেসেজ দিন।</p>
-<p><b>Insaf Family Store</b></p>
+<h2>অর্ডার ও যোগাযোগ</h2>
+<p>পণ্য সম্পর্কে জানতে আমাদের মেসেজ করুন।</p>
+<a class="btn" href="https://www.facebook.com/">ফেসবুকে যোগাযোগ</a>
 </section>
 
 <footer>
