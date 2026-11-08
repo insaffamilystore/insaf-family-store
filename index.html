@@ -154,6 +154,35 @@ padding:20px;
 </div>
 
 </div>
+
+<section style="padding:20px;background:#eaf5ee;text-align:center;border-radius:12px;margin:20px;">
+<h2>Insaf Family Store</h2>
+<h3>অনলাইনে অর্ডার করুন</h3>
+
+<input id="customer" placeholder="আপনার নাম" style="padding:12px;width:90%;margin:6px;">
+<input id="phone" placeholder="আপনার মোবাইল নম্বর" style="padding:12px;width:90%;margin:6px;">
+<textarea id="product" placeholder="কোন পণ্য অর্ডার করবেন?" style="padding:12px;width:90%;margin:6px;"></textarea>
+
+<button onclick="orderWhatsApp()" style="background:#168849;color:white;padding:14px 25px;border:0;border-radius:8px;">
+WhatsApp-এ অর্ডার করুন
+</button>
+</section>
+
+<script>
+function orderWhatsApp(){
+let name=document.getElementById('customer').value;
+let phone=document.getElementById('phone').value;
+let product=document.getElementById('product').value;
+
+if(!name || !phone || !product){
+alert('সব তথ্য পূরণ করুন');
+return;
+}
+
+let message="নতুন অর্ডার\nনাম: "+name+"\nমোবাইল: "+phone+"\nপণ্য: "+product;
+window.open("https://wa.me/8801760745940?text="+encodeURIComponent(message),"_blank");
+}
+</script>
 </section>
 
 <section class="contact" id="contact">
